@@ -3,6 +3,24 @@ public class Account{
   private String number;
   private double balance;
 
+  public Account(String owner, String number, double balance){
+    this.owner = owner;
+    this.number = number;
+    this.balance = balance;
+    System.out.println("Testando o código");
+  }
+
+  public Account(String owner, String number){
+    this.owner = owner;
+    this.number = number;
+    System.out.println("Testando o código com dois parâmetros");
+  }
+
+  public Account(String owner){
+    this.owner = owner;
+    System.out.println("Testando o código com um parâmetro");
+  }
+  
   public String getOwner(){
     return owner;
   }
